@@ -6,7 +6,7 @@ export class AppService {
   
   async pythonCropper(): Promise<void> {
 
-    PythonShell.run('./src/main.py', null).then((messages) => {
+    await PythonShell.run('./src/main.py', null).then((messages) => {
       console.log('finished')
     })
 
